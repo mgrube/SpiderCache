@@ -11,7 +11,9 @@ be found at [2].
 SpiderCache can essentially be broken up into 3 Components:
 
 Distributed Key-Value Store
+
 DNS Intercept
+
 Caching
 
 The distributed key-value store aspect of SpiderCache provides both scalability and redundancy.
