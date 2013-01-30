@@ -61,6 +61,6 @@ Remaining Work
  to provide more reasonable security for this network.
  
  
- [1] http://eng.utoledo.edu/~mgrube/Proposal.pdf
- [2] http://www.liberianbooks.org
+[1] http://eng.utoledo.edu/~mgrube/Proposal.pdf
+[2] http://www.liberianbooks.org
  
