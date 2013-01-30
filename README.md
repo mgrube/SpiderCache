@@ -53,8 +53,9 @@ Typical Use Scenario
  and with a higher degree of reliability than would have otherwise been possible.
  
  
- Remaining Work
- ==========================
+Remaining Work
+==========================
+ 
  SpiderCache's main source of security is currently provided by the assumption that end users will not have access
  to the software themselves. This is not acceptable. A cryptographically based system of trust needs to be created
  to provide more reasonable security for this network.
