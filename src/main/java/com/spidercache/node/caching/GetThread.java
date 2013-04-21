@@ -47,7 +47,7 @@ public class GetThread extends Thread {
             	// Check message got back to see if didn't travel far enough, and if didn't say cache.remove(URL)
             	case CACHE_HIT:
             			cacheentry = cache.getEntry(url);
-            			cacheentry
+            			//cacheentry
             			break;
             	case CACHE_MODULE_RESPONSE:		
             			break;

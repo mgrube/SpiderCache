@@ -11,6 +11,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.planx.routing.kademlia.Node;
 import org.apache.log4j.*;
 import org.planx.routing.kademlia.*;
 import org.planx.routing.messaging.*;

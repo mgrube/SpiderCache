@@ -147,8 +147,8 @@ public class DiscoveryService implements Runnable{
 	}
 	
 	public static void main(String args[]) throws IOException, InterruptedException{
-		TestObject test = new TestObject("Testing!");
-		DHT node1 = new DHT("Node 5001", 5001, 5101, "192.168.2.15", 5001);
+//		TestObject test = new TestObject("Testing!");
+//		DHT node1 = new DHT("Node 5001", 5001, 5101, "192.168.2.15", 5001);
 //		DHT node2 = new DHT("Node 5001", 5002, 5102, "192.168.2.7", 5001);
 
 	}
