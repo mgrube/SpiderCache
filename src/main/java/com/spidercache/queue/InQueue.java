@@ -94,14 +94,14 @@ public class InQueue {
 		 		}
 		 	}
 		}	
-		Message message = new QueueMessage(myNode.getNode(),current.getDataHash());		 
+		//Message message = new QueueMessage(myNode.getNode(),current.getDataHash());
 		
 		try 
 		{
-			myNode.sendMessage(message, myadr.getAddress(), myadr.getPort(),new QueueReplyReceiver(myNode));	
+			//myNode.sendMessage(message, myadr.getAddress(), myadr.getPort(),new QueueReplyReceiver(myNode));
 			status.requestsOut++;
 		}
-		catch (IOException e) 
+		catch (Exception e)
 		{			
 			e.printStackTrace();
 		}		
@@ -126,7 +126,7 @@ public class InQueue {
 	/**
 	 * Tests to see if there is already a request headed to the destination
 	 * 
-	 @param destination the address of the node the request is headed to.
+	 //@param destination the address of the node the request is headed to.
 	 */
 	private boolean isDuplicate(String data)
 	{

@@ -2,9 +2,9 @@ package com.spidercache.queue;
 import java.io.IOException;
 import java.util.Collections;
 
-import org.planx.xmlstore.routing.Node;
-import org.planx.xmlstore.routing.messaging.Message;
-import org.planx.xmlstore.routing.messaging.Receiver;
+import org.planx.routing.kademlia.Node;
+import org.planx.routing.messaging.Message;
+import org.planx.routing.messaging.Receiver;
 import com.spidercache.dht.*;
 
 
@@ -22,7 +22,7 @@ public class QueueReplyReceiver implements Receiver {
     	
     	
        //Message reply =  m;
-        dht.replyMessage(m, dht.getNode().getInetAddress(), dht.getNode().getPort(), comm);
+        //dht.replyMessage(m, dht.getNode().getInetAddress(), dht.getNode().getPort(), comm);
         //System.out.println("TestReplyReceiver.java: TestReplyMessage recieved at " + node.toString() + " from " + reply.getOrigin());
         // Sort nodes so that the order is deterministic
        // Collections.sort(reply.getNodes(), new Node.DistanceComparator(node.getId()));
