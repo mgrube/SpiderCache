@@ -11,7 +11,7 @@ import java.util.LinkedList;
 //import Queue.TestMessage;
 
 import com.spidercache.node.Request;
-import org.planx.xmlstore.routing.messaging.Message;
+import org.planx.routing.messaging.Message;
 
 import com.spidercache.dht.*;
 public class outQueue {
@@ -42,15 +42,15 @@ public class outQueue {
 	{
 		int comm = 0;
 		QueueReplyReceiver receiver = new QueueReplyReceiver(myNode);
-		Message message = new QueueMessage(myNode.getNode(),"Requesting Status");		
+		//Message message = new QueueMessage(myNode.getNode(),"Requesting Status");
 		for(int i = 0;i<nodeaddress.size();i++)
 		{
 			try 
 			{				
-				comm = myNode.sendMessage(message, nodeaddress.get(i).getAddress(), nodeaddress.get(i).getPort(),receiver);
+				//comm = myNode.sendMessage(message, nodeaddress.get(i).getAddress(), nodeaddress.get(i).getPort(),receiver);
 				neighborStatus.put(nodeaddress.get(i).getAddress(), receiver.toString());				
 			} 
-			catch (IOException e)
+			catch (Exception e)
 			{				
 				e.printStackTrace();
 			}			
@@ -62,7 +62,7 @@ public class outQueue {
 	}
 	public void Send(Request r,DHT destNode,DHT myNode)
 	{
-		Message message = new QueueMessage(destNode.getNode(),r.toString());
+		//Message message = new QueueMessage(destNode.getNode(),r.toString());
 		QueueReplyReceiver test = new QueueReplyReceiver(destNode);
 		InetAddress temp = null;
 		try {
@@ -75,9 +75,9 @@ public class outQueue {
 		try 
 		{			
 			//destNode.sendMessage(message, temp, 5001, test);			
-			destNode.sendMessage(message,temp,5001, new QueueReplyReceiver(myNode));
+			//destNode.sendMessage(message,temp,5001, new QueueReplyReceiver(myNode));
 		} 		
-		catch (IOException e)
+		catch (Exception e)
 		{			
 			e.printStackTrace();
 		}
