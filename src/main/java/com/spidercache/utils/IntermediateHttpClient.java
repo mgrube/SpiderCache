@@ -31,16 +31,16 @@ public class IntermediateHttpClient implements HttpClient{
 			HttpContext arg2) throws IOException, ClientProtocolException {
 		// TODO Auto-generated method stub
 		HttpResponse response = null;
-		switch ((CacheResponseStatus)arg2.getAttribute("spider.cache.response"))
-		{
+//		switch ((CacheResponseStatus)arg2.getAttribute("spider.cache.response"))
+//		{
 		//This will cause the request to be sent to the origin server. 
-		case CACHE_ISSUE_TO_HOST:
-			response =  client.execute(arg0, arg1, arg2);
-		case CACHE_ISSUE_TO_REMOTE_NODE:
+//		case CACHE_ISSUE_TO_HOST:
+//			response =  client.execute(arg0, arg1, arg2);
+//		case CACHE_ISSUE_TO_REMOTE_NODE:
 			//You will program the logic for requesting the content from other node's hear.
 			//The logic will need to return an HttpResposne.
-			response = client.execute(arg0, arg1, arg2);
-		}
+///			response = client.execute(arg0, arg1, arg2);
+//		}
 		
 		return response;
 	}
